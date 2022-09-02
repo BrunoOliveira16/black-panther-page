@@ -20,6 +20,22 @@ Para o desenvolvimento do projeto foi utilizado as seguintes tecnologias:
 
 ---
 
+## Documentações
+
+- **SASS**
+```
+https://sass-lang.com/documentation/
+```
+- **Less**
+```
+https://lesscss.org/functions/
+```
+
+- **Stylus**
+```
+https://stylus-lang.com/docs/
+```
+
 ## 🙋🏻‍♂️ Autor
 
 Bruno Oliveira
