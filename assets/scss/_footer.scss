@@ -1,0 +1,30 @@
+footer {
+    display: block;
+    background-color: $bg-color;
+    margin: 30px auto 0 auto;
+    padding: 1rem 0;
+    width: 100%;
+
+    p {
+        text-align: center;
+    }
+    strong:hover{
+        color: $color-01;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+    
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 10px 10px;
+        }
+    
+        img:hover {
+            opacity: 0.5;
+        }
+    }
+    
+}

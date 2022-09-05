@@ -1,0 +1,32 @@
+header {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        margin-top: 0;
+        color: $color-04;
+    }
+
+    .nav {
+        display: flex;
+
+        a {
+            color: $color-04;
+            font-weight: 700;
+        }
+        
+        li {
+            margin: 0 10px;
+        }
+        a:hover {
+            color: $color-01;
+        }
+    }
+}

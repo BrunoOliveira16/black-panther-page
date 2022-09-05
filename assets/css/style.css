@@ -2,10 +2,18 @@
   border: 0;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
   font-size: 62, 5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: #444;
 }
 
 div,
@@ -13,16 +21,10 @@ p {
   display: block;
 }
 
-header,
-section,
-footer {
+section {
   display: block;
   margin: 0 auto;
   width: 100%;
-  padding: 4rem 0;
-}
-
-section {
   padding: 0;
 }
 
@@ -36,14 +38,8 @@ img {
   height: auto;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
-  color: #444;
-}
-
 p {
-  color: #559;
+  color: #222;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
   text-align: left;
@@ -64,31 +60,6 @@ h2 {
 h3 {
   color: #f00;
   font-size: 1.8rem;
-}
-
-header,
-footer {
-  background-color: #ddd;
-}
-
-footer {
-  margin-top: 30px;
-}
-footer p {
-  text-align: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-}
-.nav img {
-  width: 40px;
-  height: 40px;
-  margin: 10px 10px;
-}
-.nav img:hover {
-  opacity: 0.5;
 }
 
 .blocks {
@@ -174,6 +145,60 @@ footer p {
   color: #ddd;
   width: 100%;
   padding: 2rem 0;
+}
+
+header {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  margin-top: 0;
+  color: #222;
+}
+header .nav {
+  display: flex;
+}
+header .nav a {
+  color: #222;
+  font-weight: 700;
+}
+header .nav li {
+  margin: 0 10px;
+}
+header .nav a:hover {
+  color: #559;
+}
+
+footer {
+  display: block;
+  background-color: #ddd;
+  margin: 30px auto 0 auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+footer p {
+  text-align: center;
+}
+footer strong:hover {
+  color: #559;
+}
+footer .nav {
+  display: flex;
+  justify-content: center;
+}
+footer .nav img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px;
+}
+footer .nav img:hover {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
