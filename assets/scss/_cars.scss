@@ -1,10 +1,33 @@
+@import 'blocks';
+
+@mixin theme($theme: $color-04, $bg: $color-04){
+    border: 1px solid $theme;
+    background-color: $bg;
+}
+
 .cars {
+    @extend %blocks;
     h2 {
         color: $color-default;
     }
-    
+    .destacks {
+        @include theme;
+        display: flex;
+        height: max-content;
+        align-items: baseline;
+        flex-flow: column;
+        border: 5px solid $color-03 
+    }
+
     li {
+        @include theme ($theme: $color-default, $bg: $bg-color);
         color: $color-01;
+        /*display: flex;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;*/
 
         a {
             background-color: $color-default;

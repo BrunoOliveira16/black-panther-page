@@ -62,13 +62,13 @@ h3 {
   font-size: 1.8rem;
 }
 
-.blocks {
+.bikes, .cars {
   padding: 3rem 0;
 }
-.blocks h2 {
+.bikes h2, .cars h2 {
   color: #559;
 }
-.blocks ul {
+.bikes ul, .cars ul {
   list-style-type: none;
   font-size: 1.4rem;
   display: flex;
@@ -77,22 +77,22 @@ h3 {
   padding: 1rem 0;
   width: 100%;
 }
-.blocks li {
+.bikes li, .cars li {
   color: #999;
   display: block;
   margin: 1.5rem auto;
   width: 30%;
 }
-.blocks li .img-container {
+.bikes li .img-container, .cars li .img-container {
   display: block;
   height: 200px;
   overflow: hidden;
   width: 100%;
 }
-.blocks li .img-container:hover {
+.bikes li .img-container:hover, .cars li .img-container:hover {
   filter: brightness(2);
 }
-.blocks li a {
+.bikes li a, .cars li a {
   background-color: #559;
   border-radius: 5px;
   color: white;
@@ -103,18 +103,80 @@ h3 {
   text-align: center;
   text-decoration: none;
 }
-.blocks li a:hover {
+.bikes li a:hover, .cars li a:hover {
   opacity: 0.8;
 }
 
 .cars h2 {
   color: #444;
 }
+.cars .destacks {
+  border: 1px solid #222;
+  background-color: #222;
+  display: flex;
+  height: max-content;
+  align-items: baseline;
+  flex-flow: column;
+  border: 5px solid #f00;
+}
 .cars li {
+  border: 1px solid #444;
+  background-color: #ddd;
   color: #559;
+  /*display: flex;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;*/
 }
 .cars li a {
   background-color: #444;
+}
+
+.bikes, .cars {
+  padding: 3rem 0;
+}
+.bikes h2, .cars h2 {
+  color: #559;
+}
+.bikes ul, .cars ul {
+  list-style-type: none;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  padding: 1rem 0;
+  width: 100%;
+}
+.bikes li, .cars li {
+  color: #999;
+  display: block;
+  margin: 1.5rem auto;
+  width: 30%;
+}
+.bikes li .img-container, .cars li .img-container {
+  display: block;
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+}
+.bikes li .img-container:hover, .cars li .img-container:hover {
+  filter: brightness(2);
+}
+.bikes li a, .cars li a {
+  background-color: #559;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 2rem;
+  margin: 3rem auto 1.5rem;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.bikes li a:hover, .cars li a:hover {
+  opacity: 0.8;
 }
 
 .destack {
@@ -178,7 +240,7 @@ header .nav a:hover {
 footer {
   display: block;
   background-color: #ddd;
-  margin: 30px auto 0 auto;
+  margin: 50px auto 0 auto;
   padding: 1rem 0;
   width: 100%;
 }
