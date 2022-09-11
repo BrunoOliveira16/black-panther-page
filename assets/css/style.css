@@ -46,7 +46,6 @@ img {
 p {
   color: #222;
   font-size: 1.4rem;
-  margin-bottom: 1.5rem;
   text-align: left;
 }
 
@@ -67,13 +66,15 @@ h3 {
   font-size: 1.8rem;
 }
 
-.bikes, .cars {
-  padding: 3rem 0;
+.blocks {
+  padding: 1rem 0;
 }
-.bikes h2, .cars h2 {
+.blocks__title {
   color: #559;
+  margin-left: 3rem;
+  font-weight: 700;
 }
-.bikes ul, .cars ul {
+.blocks__list {
   list-style-type: none;
   font-size: 1.4rem;
   display: flex;
@@ -84,55 +85,65 @@ h3 {
   width: 100%;
 }
 @media (max-width: 999px) {
-  .bikes ul, .cars ul {
+  .blocks__list {
     display: block;
   }
 }
-.bikes li, .cars li {
+.blocks__item {
   color: #999;
   margin: 1.5rem 0.75rem;
   text-align: center;
   width: calc(33% - 15px);
 }
 @media (max-width: 999px) {
-  .bikes li, .cars li {
+  .blocks__item {
     width: calc(99% - 30px);
   }
 }
-.bikes li .img-container, .cars li .img-container {
+.blocks__img-container {
   display: block;
   height: 15rem;
   overflow: hidden;
   width: 100%;
 }
 @media (max-width: 999px) {
-  .bikes li .img-container, .cars li .img-container {
+  .blocks__img-container {
     height: 20rem;
   }
 }
-.bikes li .img-container:hover, .cars li .img-container:hover {
+.blocks__img-container:hover {
   filter: brightness(2);
 }
-.bikes li a, .cars li a {
+.blocks__button {
   background-color: #559;
   border-radius: 5px;
   color: white;
   display: block;
+  width: 80%;
   font-size: 2rem;
-  margin: 3rem auto 1.5rem;
+  margin: 0 auto 1.5rem;
   padding: 4px 8px;
   text-align: center;
   text-decoration: none;
 }
-.bikes li a:hover, .cars li a:hover {
+.blocks__button:hover {
   opacity: 0.8;
 }
+.blocks__description {
+  color: #444;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+}
+.blocks__description--destack {
+  color: #222;
+  font-weight: 700;
+}
 
-.cars h2 {
+.cars__title {
   color: #444;
 }
-.cars .destacks {
-  border: 1px solid #222;
+.cars--destacks {
+  border: 2px solid #222;
   background-color: #222;
   display: flex;
   height: max-content;
@@ -140,8 +151,8 @@ h3 {
   flex-flow: column;
   border: 5px solid #f00;
 }
-.cars li {
-  border: 1px solid #444;
+.cars__item {
+  border: 2px solid #444;
   background-color: #ddd;
   color: #559;
   /*display: flex;
@@ -151,69 +162,15 @@ h3 {
   align-items: baseline;
   flex-flow: column;*/
 }
-.cars li a {
+.cars__button {
   background-color: #444;
 }
-
-.bikes, .cars {
-  padding: 3rem 0;
-}
-.bikes h2, .cars h2 {
-  color: #559;
-}
-.bikes ul, .cars ul {
-  list-style-type: none;
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  margin: 1.5rem auto;
-  padding: 1rem 0;
-  width: 100%;
-}
-@media (max-width: 999px) {
-  .bikes ul, .cars ul {
-    display: block;
-  }
-}
-.bikes li, .cars li {
-  color: #999;
-  margin: 1.5rem 0.75rem;
-  text-align: center;
-  width: calc(33% - 15px);
-}
-@media (max-width: 999px) {
-  .bikes li, .cars li {
-    width: calc(99% - 30px);
-  }
-}
-.bikes li .img-container, .cars li .img-container {
-  display: block;
-  height: 15rem;
-  overflow: hidden;
-  width: 100%;
-}
-@media (max-width: 999px) {
-  .bikes li .img-container, .cars li .img-container {
-    height: 20rem;
-  }
-}
-.bikes li .img-container:hover, .cars li .img-container:hover {
-  filter: brightness(2);
-}
-.bikes li a, .cars li a {
+.cars__button--destack {
   background-color: #559;
-  border-radius: 5px;
-  color: white;
-  display: block;
-  font-size: 2rem;
-  margin: 3rem auto 1.5rem;
-  padding: 4px 8px;
-  text-align: center;
-  text-decoration: none;
 }
-.bikes li a:hover, .cars li a:hover {
-  opacity: 0.8;
+
+.bikes {
+  display: flex;
 }
 
 .destack {
@@ -221,82 +178,104 @@ h3 {
   padding: 1.5rem;
   margin-bottom: 30px;
 }
-.destack h1 {
+.destack__title {
   color: #f00;
   float: left;
   font-size: 3rem;
   margin-top: 0;
 }
-.destack h2 {
+.destack__subtitle {
   float: left;
   font-size: 1.4rem;
   color: #ddd;
   margin-left: 1.5rem;
   margin-top: 1.5rem;
 }
-.destack img {
+.destack__image {
   width: 100%;
   height: auto;
   margin: 1.5rem auto;
 }
-.destack p {
+.destack__description {
   font-size: 1.8rem;
   color: #ddd;
   width: 100%;
   padding: 2rem 0;
 }
 
-header {
+.header {
   background-color: #ddd;
   display: flex;
   flex-direction: row;
-  padding: 2rem 0;
+  padding: 1.2rem 0;
 }
-header .container {
+.header .container {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
-header h1 {
+.header__title {
   margin-top: 0;
   color: #222;
+  float: left;
 }
-header .nav {
+.header__list {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-header .nav a {
+.header__item {
+  margin: 0 10px;
+}
+.header__link {
   color: #222;
   font-weight: 700;
 }
-header .nav li {
-  margin: 0 10px;
-}
-header .nav a:hover {
+.header__link:hover {
   color: #559;
 }
+.header__input {
+  height: 30px;
+  border: 1px solid #222;
+  font-size: 0.9rem;
+  padding-left: 10px;
+}
+.header__button {
+  height: 30px;
+  width: 100px;
+  color: #ddd;
+  background-color: #222;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+.header__button:hover {
+  opacity: 0.7;
+}
 
-footer {
+.footer {
   display: block;
   background-color: #ddd;
   margin: 50px auto 0 auto;
   padding: 1rem 0;
   width: 100%;
 }
-footer p {
+.footer__description {
   text-align: center;
 }
-footer strong:hover {
+.footer strong:hover {
   color: #559;
 }
-footer .nav {
+.footer__nav {
   display: flex;
   justify-content: center;
 }
-footer .nav img {
+.footer__image {
   width: 40px;
   height: 40px;
   margin: 10px 10px;
 }
-footer .nav img:hover {
+.footer__image:hover {
   opacity: 0.5;
 }
 

@@ -1,12 +1,13 @@
-%blocks {
+.blocks {
+    padding: 1rem 0;
 
-    padding: 3rem 0;
-
-    h2 {
+    &__title {
         color: $color-01;
+        margin-left: $mt-02;
+        font-weight: 700;
     }
     
-    ul {
+    &__list {
         list-style-type: none;
         font-size: $font-small;
         display: flex;
@@ -21,7 +22,7 @@
         }
     }
 
-    li {
+    &__item {
         color: $color-02;
         margin: $space-default .75rem;
         text-align: center;
@@ -29,37 +30,49 @@
 
         @media (max-width: $tablet) {
             width: calc(99% - 30px);
+        }  
+    }
+
+    &__img-container {
+        display: block;
+        height: 15rem;
+        overflow: hidden;
+        width: 100%;
+
+        @media (max-width: $tablet) {
+            height: 20rem;
         }
-        
-        .img-container {
-            display: block;
-            height: 15rem;
-            overflow: hidden;
-            width: 100%;
-            @media (max-width: $tablet) {
-                height: 20rem;
-            }
-        }
-        
-        .img-container:hover {
+
+        &:hover {
             filter: brightness(2);
         }
-
-        a {
-            background-color: $color-01;
-            border-radius: 5px;
-            color: white;
-            display: block;
-            font-size: $font-medium;
-            margin: $mt-02 auto $mb;
-            padding: 4px 8px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        a:hover {
-            opacity: 0.8;
-        }
+    }
     
+    &__button {
+        background-color: $color-01;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        width: 80%;
+        font-size: $font-medium;
+        margin: 0 auto $mb;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    &__button:hover {
+        opacity: 0.8;
+    }
+
+    &__description {
+        color: $color-default;
+        font-size: $font-small;
+        padding: $space-default;
+
+        &--destack {
+            color: $color-04;
+            font-weight: 700;
+        }
     }
 }

@@ -10,16 +10,20 @@
     <title>Loja de Carros</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <h1>Loja de Carros</h1>
+            <h1 class="header__title">Loja de Carros</h1>
         </div>
         <div class="container">
-            <ul class="nav">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Carros</a></li>
-                <li><a href="#">Contato</a></li>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="#">Inicio</a></li>
+                <li class="header__item"><a class="header__link" href="#">Sobre</a></li>
+                <li class="header__item"><a class="header__link" href="#">Carros</a></li>
+                <li class="header__item"><a class="header__link" href="#">Contato</a></li>
+                <li class="header__item">
+                    <input class="header__input" type="text" placeholder="Buscar">
+                    <button class="header__button" type="button">Buscar</button>
+                </li>
             </ul>
         </div>
     </header>
@@ -27,78 +31,84 @@
 
         <div class="destack">
             <div class="container">
-                <h1>Audi A5</h1>
-                <h2>Destaque</h2>
-                <img src="./assets/images/pexels-mike-244206.jpg" alt="Foto Audi por Mike em Pexels">
-                <p>Carro seminovo, 4 portas, completo com ar-condicionado, vidro e travas elétricas.</p>
+                <h1 class="destack__title">Audi A5</h1>
+                <h2 class="destack__subtitle">Destaque</h2>
+                <img class="destack__image" src="./assets/images/pexels-mike-244206.jpg" alt="Foto Audi por Mike em Pexels">
+                <p class="destack__description">Carro seminovo, 4 portas, completo com ar-condicionado, vidro e travas elétricas.</p>
             </div>   
         </div>
 
         <div class="container">
-            <div class="cars">
-                <h2>Ver Carros</h2>
-                <ul>
-                    <li>
-                        <div class="img-container">
+            <div class="blocks cars">
+                <h2 class="blocks__title cars__title">Ver Carros</h2>
+                <ul class="blocks__list cars__list">
+                    <li class="blocks__item cars__item cars__item--destack">
+                        <div class="blocks__img-container cars__img-container">
                             <img src="./assets/images/pexels-mike-431950.jpg" alt="Foto Mike em Pexels">
-                        </div> 
-                        <a href="#01">Ver mais</a>
+                        </div>
+                        <P class="blocks__description blocks__description--destack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi explicabo perspiciatis?</P> 
+                        <a class="blocks__button cars__button cars__button--destack" href="#01">Ver mais</a>
                     </li>
-                    <li>
-                        <div class="img-container">
+                    <li class="blocks__item cars__item">
+                        <div class="blocks__img-container cars__img-container">
                             <img src="./assets/images/pexels-pixabay-248747.jpg" alt="Foto Pixabay Pixels">
                         </div>
-                        <a href="#02">Ver mais</a>
+                        <P class="blocks__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi explicabo perspiciatis?</P> 
+                        <a class="blocks__button cars__button" href="#02">Ver mais</a>
                     </li>
-                    <li>
-                        <div class="img-container">
+                    <li class="blocks__item cars__item">
+                        <div class="blocks__img-container cars__img-container">
                             <img src="./assets/images/pexels-torsten-dettlaff-70912.jpg" alt="Foto Pexels Torsten">
                         </div> 
-                        <a href="#03"> Ver mais</a>
+                        <P class="blocks__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi explicabo perspiciatis?</P> 
+                        <a class="blocks__button cars__button" href="#03"> Ver mais</a>
                     </li>
                 </ul>
             </div>
         </div>
 
         <div class="container">
-            <div class="cars">
-                <h2>Ver Carros</h2>
-                <ul>
-                    <li class="destacks">
-                        <div class="img-container">
+            <div class="blocks cars">
+                <h2 class="blocks__title cars__title">Ver Carros</h2>
+                <ul class="blocks__list cars__list">
+                    <li class="blocks__item cars__item cars__item--destack">
+                        <div class="blocks__img-container cars__img-container">
                             <img src="./assets/images/img-04.jpg" alt="Foto Mike em Pexels">
-                        </div> 
-                        <a href="#01">Ver mais</a>
+                        </div>
+                        <P class="blocks__description blocks__description--destack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi explicabo perspiciatis?</P>  
+                        <a class="blocks__button cars__button cars__button--destack" href="#01">Ver mais</a>
                     </li>
-                    <li>
-                        <div class="img-container">
+                    <li class="blocks__item cars__item">
+                        <div class="blocks__img-container cars__img-container">
                             <img src="./assets/images/img-05.jpg" alt="Foto Pixabay Pixels">
                         </div>
-                        <a href="#02">Ver mais</a>
+                        <P class="blocks__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi explicabo perspiciatis?</P> 
+                        <a class="blocks__button cars__button" href="#02">Ver mais</a>
                     </li>
-                    <li>
-                        <div class="img-container">
+                    <li class="blocks__item cars__item">
+                        <div class="blocks__img-container cars__img-container">
                             <img src="./assets/images/img-06.jpg" alt="Foto Pexels Torsten">
-                        </div> 
-                        <a href="#03"> Ver mais</a>
+                        </div>
+                        <P class="blocks__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi explicabo perspiciatis?</P>  
+                        <a class="blocks__button cars__button" href="#03"> Ver mais</a>
                     </li>
                 </ul>
             </div>
         </div>
 
     </section>
-    <footer>
+    <footer class="footer">
        
         <div class="container">
-            <ul class="nav">
-                <a href=""><img src="./assets/images/github.svg" alt=""></a>
-                <a href=""><img src="./assets/images/linkedin.svg" alt=""></a>
-                <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
+            <ul class="footer__nav">
+                <a href=""><img class="footer__image" src="./assets/images/github.svg" alt=""></a>
+                <a href=""><img class="footer__image" src="./assets/images/linkedin.svg" alt=""></a>
+                <a href=""><img class="footer__image" src="./assets/images/instagram.svg" alt=""></a>
             </ul>
         </div>
 
         <div class="container">
-            <p> &copy; Desenvolvido por <strong>Bruno Oliveira</strong></p>
+            <p class="footer__description"> &copy; Desenvolvido por <strong>Bruno Oliveira</strong></p>
         </div>
 
     </footer>

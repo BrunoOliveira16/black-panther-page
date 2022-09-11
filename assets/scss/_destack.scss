@@ -3,14 +3,14 @@
     padding: $space-default;
     margin-bottom: 30px;
     
-    h1 {
+    &__title {
         color: $color-03;
         float: left;
         font-size: $font-big;
         margin-top: 0;
     }
 
-    h2 {
+    &__subtitle {
         float: left;
         font-size: $font-small;
         color: $bg-color;
@@ -18,13 +18,13 @@
         margin-top: $mt;
     }
 
-    img {
+    &__image {
         width: 100%;
         height: auto;
         margin: $space-default auto;
     }
 
-    p {
+    &__description {
         font-size: $font-normal;
         color: $bg-color;
         width: 100%;
