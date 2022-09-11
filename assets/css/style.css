@@ -30,7 +30,12 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100%;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 83.3333333333%;
+  }
 }
 
 img {
@@ -73,21 +78,37 @@ h3 {
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  height: auto;
+  margin: 1.5rem auto;
   padding: 1rem 0;
   width: 100%;
 }
+@media (max-width: 999px) {
+  .bikes ul, .cars ul {
+    display: block;
+  }
+}
 .bikes li, .cars li {
   color: #999;
-  display: block;
-  margin: 1.5rem auto;
-  width: 30%;
+  margin: 1.5rem 0.75rem;
+  text-align: center;
+  width: calc(33% - 15px);
+}
+@media (max-width: 999px) {
+  .bikes li, .cars li {
+    width: calc(99% - 30px);
+  }
 }
 .bikes li .img-container, .cars li .img-container {
   display: block;
-  height: 200px;
+  height: 15rem;
   overflow: hidden;
   width: 100%;
+}
+@media (max-width: 999px) {
+  .bikes li .img-container, .cars li .img-container {
+    height: 20rem;
+  }
 }
 .bikes li .img-container:hover, .cars li .img-container:hover {
   filter: brightness(2);
@@ -145,21 +166,37 @@ h3 {
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  height: auto;
+  margin: 1.5rem auto;
   padding: 1rem 0;
   width: 100%;
 }
+@media (max-width: 999px) {
+  .bikes ul, .cars ul {
+    display: block;
+  }
+}
 .bikes li, .cars li {
   color: #999;
-  display: block;
-  margin: 1.5rem auto;
-  width: 30%;
+  margin: 1.5rem 0.75rem;
+  text-align: center;
+  width: calc(33% - 15px);
+}
+@media (max-width: 999px) {
+  .bikes li, .cars li {
+    width: calc(99% - 30px);
+  }
 }
 .bikes li .img-container, .cars li .img-container {
   display: block;
-  height: 200px;
+  height: 15rem;
   overflow: hidden;
   width: 100%;
+}
+@media (max-width: 999px) {
+  .bikes li .img-container, .cars li .img-container {
+    height: 20rem;
+  }
 }
 .bikes li .img-container:hover, .cars li .img-container:hover {
   filter: brightness(2);
