@@ -10,7 +10,8 @@
 O projeto é composto das seguintes caracteristicas:
 
 - **Instalação do SASS:** Instalação por meio do Node.js através do comando **npm install -g sass**;
-- **Utilização do SASS:** Aplicação do código do processasor no projeto;
+- **Utilização do SASS:** Aplicação do código do pre-processador no projeto;
+- **BEM CSS:** Aplicação de conceitos do Block Element Modifier do css;
 ---
 
 ## 💼 Tecnologias utilizadas
