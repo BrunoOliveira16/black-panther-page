@@ -1,44 +1,29 @@
-# sass-academico
+# 🏆 Landing Page Pantera Negra
+![GitHub repo size](https://img.shields.io/github/repo-size/BrunoOliveira16/black-panther-page?style=for-the-badge)
+![Languages](https://img.shields.io/github/languages/count/BrunoOliveira16/black-panther-page?style=for-the-badge)
+![Status projeto](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-blue?style=for-the-badge)
 
-## 📝 Repositório de Estudo - SASS
+<br>
 
-- Este repositório trata-se da aplicação do pré-processador SASS, elevando o nível do CSS.
----
+## 🛠️ Como executar o projeto
+Para executar este projeto localmente em sua máquina, siga estas etapas:
 
-## 📚 Seções
+- Certifique-se de ter o Node.js instalado em sua máquina.
 
-O projeto é composto das seguintes caracteristicas:
+- Clone este repositório em sua máquina local usando o comando ``git clone``.
 
-- **Instalação do SASS:** Instalação por meio do Node.js através do comando **npm install -g sass**;
-- **Utilização do SASS:** Aplicação do código do pre-processador no projeto;
-- **BEM CSS:** Aplicação de conceitos do Block Element Modifier do css;
----
+- Instale as dependências do projeto executando ``npm install`` no diretório do projeto.
 
-## 💼 Tecnologias utilizadas
+- Para executar o projeto em modo de desenvolvimento, execute o comando ``npm run dev``. Isso iniciará o comando ``gulp watch`` que observará as alterações nos arquivos .scss e executará a função styles para compilar os arquivos .scss em .css.
 
-Para o desenvolvimento do projeto foi utilizado as seguintes tecnologias:
+- Para realizar a build do projeto, execute o comando ``npm run build``. Isso iniciará o comando ``gulp`` que executará as funções styles e images em paralelo para compilar os arquivos .scss em .css e otimizar as imagens.
 
-- SASS;
-- Node.js 16.15.0;
+- As funções dentro do arquivo ``gulpfile.js`` podem ser executadas individualmente com o comando ``gulp <nome-da-função>``, por exemplo, para executar apenas a função styles, execute o comando ``gulp styles``.
 
----
+<br>
 
-## Documentações
-
-- **SASS**
-```
-https://sass-lang.com/documentation/
-```
-- **Less**
-```
-https://lesscss.org/functions/
-```
-
-- **Stylus**
-```
-https://stylus-lang.com/docs/
-```
-
-## 🙋🏻‍♂️ Autor
-
-Bruno Oliveira
+## ✔️ Tecnologias Utilizadas
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Gulp](https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)
