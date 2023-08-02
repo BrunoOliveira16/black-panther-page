@@ -1,7 +1,119 @@
+@use 'configs/variables.scss';
+@use 'configs/mixins.scss';
+@use 'configs/fonts.scss';
+@use 'hero';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: Avenir, sans-serif;
+}
+
+body {
+    background-color: variables.$bg-primary-color;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 360px;
+    margin: 0 auto;
+}
+
+.text--big {
+    @include mixins.text(1.125rem); //18px
+    
+    @media(max-width: 768px) {
+        @include mixins.text(.9375rem); //15px
+    }
+}
+
+.text {
+    @include mixins.text; //16px
+
+    @media(max-width: 768px) {
+        @include mixins.text(.875rem); //14px
+    }
+}
+
+.text--small {
+    @include mixins.text(.75rem); // 12px
+
+    @media(max-width: 768px) {
+        @include mixins.text(.6875rem); //11px
+    }
+}
+
+.link-text {
+    @include mixins.text(1.125rem);
+    color: variables.$text-second-color;
+    text-decoration: underline;
+}
+
+.title--big {
+    @include mixins.title(2.75rem); //44px
+
+    @media(max-width: 768px) {
+        @include mixins.title(1.625rem); //26px
+    }
+}
+
+.title {
+    @include mixins.title; //40px
+
+    @media(max-width: 768px) {
+        @include mixins.title(1.5rem); //24px
+    }
+}
+
+.title--small {
+    @include mixins.title(1.75rem); //28px
+
+    @media(max-width: 768px) {
+        @include mixins.title(1.375rem); //22px
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.75rem;
+    font-size: 1.125rem;
+    color: variables.$text-second-color;
+    background-color: variables.$btn-primary-color;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: .5rem .875rem;
+    border: 1px solid variables.$btn-primary-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(variables.$btn-primary-color, 3%);
+    }
+
+    &--second {
+        background-color: variables.$btn-second-color;
+        border-color: variables.$btn-second-color;
+
+        &:hover {
+            background-color: lighten(variables.$btn-second-color, 3%);
+        }
+    }
+
+    &--dark {
+        background-color: variables.$btn-dark-color;
+        border-color: variables.$text-second-color;
+
+        &:hover {
+            background-color: variables.$text-second-color;
+            color: variables.$bg-primary-color;
+        }
+    }
 }
