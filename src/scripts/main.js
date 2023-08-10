@@ -1,3 +1,5 @@
+AOS.init();
+
 const buttons = document.querySelectorAll('[data-tab-button]');
 const tabs = document.querySelectorAll('[data-tab-id]');
 const listImages = document.querySelectorAll('[data-tab-list]');

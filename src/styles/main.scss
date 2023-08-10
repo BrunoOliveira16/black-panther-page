@@ -1,9 +1,11 @@
 @use 'configs/variables.scss';
 @use 'configs/mixins.scss';
-@use 'configs/fonts.scss';
 @use 'hero';
 @use 'sinopse';
 @use 'characters';
+@use 'show';
+@use 'footer';
+@use 'trailer';
 
 * {
     margin: 0;
@@ -11,16 +13,23 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: Avenir, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 body {
     background-color: variables.$bg-primary-color;
+    min-width: 360px;
+}
+
+section {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7rem .5rem 4rem;
 }
 
 .container {
     max-width: 1440px;
-    min-width: 360px;
     margin: 0 auto;
 }
 
@@ -118,4 +127,13 @@ body {
             color: variables.$bg-primary-color;
         }
     }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: variables.$btn-second-color;
+    border-radius: 10px;
 }
